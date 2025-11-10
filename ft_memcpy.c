@@ -1,30 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fabdul-s <fabdul-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 21:32:37 by fabdul-s          #+#    #+#             */
-/*   Updated: 2025/11/10 21:42:03 by fabdul-s         ###   ########.fr       */
+/*   Created: 2025/11/11 01:48:48 by fabdul-s          #+#    #+#             */
+/*   Updated: 2025/11/11 02:28:35 by fabdul-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
 #include <stdio.h>
 
-int ft_isalpha(int c)
+void *ft_memcpy(void *s, const void *c, size_t len)
 {
-    if ((c>='a' && c<='z') || (c>='A' && c<='Z'))
+    unsigned char *ptr;
+    const unsigned char *ptr2;
+    size_t i;
+
+    ptr = s;
+    ptr2 = c;
+    i = 0;
+    while (i < len)
     {
-        return 1;
+        *ptr++ = *ptr2++;
+        i++;
     }
-    else
-        return 0;
+    return(s);
 }
 
-// int main()
+// int main(void)
 // {
-//     int c;
-//     c = ft_isalpha('m');
-//     printf("%d",c);
+//     char s[] = "Hello World";
+//     char c[] = "Power";
+//     memcpy(s, c, 5);
+//     printf("%s", s);
 // }

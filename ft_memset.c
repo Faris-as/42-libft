@@ -1,30 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fabdul-s <fabdul-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 21:32:37 by fabdul-s          #+#    #+#             */
-/*   Updated: 2025/11/10 21:42:03 by fabdul-s         ###   ########.fr       */
+/*   Created: 2025/11/10 21:58:42 by fabdul-s          #+#    #+#             */
+/*   Updated: 2025/11/11 02:04:06 by fabdul-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
 #include <stdio.h>
 
-int ft_isalpha(int c)
+void *ft_memset(void *c, int b, size_t len)
 {
-    if ((c>='a' && c<='z') || (c>='A' && c<='Z'))
+    int i;
+    unsigned char *ptr;
+
+    ptr = c;
+    i = 0;
+    while (i < len)
     {
-        return 1;
+        ptr[i] = (unsigned char)b;
+        i++;
     }
-    else
-        return 0;
+    return(c);
 }
 
 // int main()
 // {
-//     int c;
-//     c = ft_isalpha('m');
-//     printf("%d",c);
+//     char c[] = "memory is efficiency";
+//     ft_memset(c, '-', 7);
+//     printf("%s", c);
 // }

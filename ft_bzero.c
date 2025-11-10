@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fabdul-s <fabdul-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 21:32:37 by fabdul-s          #+#    #+#             */
-/*   Updated: 2025/11/10 21:42:03 by fabdul-s         ###   ########.fr       */
+/*   Created: 2025/11/11 01:01:12 by fabdul-s          #+#    #+#             */
+/*   Updated: 2025/11/11 02:18:13 by fabdul-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
 #include <stdio.h>
 
-int ft_isalpha(int c)
+void ft_bzero(void *c, size_t len)
 {
-    if ((c>='a' && c<='z') || (c>='A' && c<='Z'))
-    {
-        return 1;
-    }
-    else
-        return 0;
-}
+    size_t i;
 
-// int main()
-// {
-//     int c;
-//     c = ft_isalpha('m');
-//     printf("%d",c);
-// }
+    i = 0;
+    while (i < len)
+    {
+        c[i] = 0;
+        i++;
+    }
+}

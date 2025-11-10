@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fabdul-s <fabdul-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 21:32:37 by fabdul-s          #+#    #+#             */
-/*   Updated: 2025/11/10 21:42:03 by fabdul-s         ###   ########.fr       */
+/*   Created: 2025/11/10 21:46:07 by fabdul-s          #+#    #+#             */
+/*   Updated: 2025/11/10 21:58:21 by fabdul-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <string.h>
 
-int ft_isalpha(int c)
+int ft_strlen(char *s)
 {
-    if ((c>='a' && c<='z') || (c>='A' && c<='Z'))
+    int i;
+    int length;
+
+    length = 0;
+    while(s[i] != '\0')
     {
-        return 1;
+        length++;
     }
-    else
-        return 0;
+    return length;
 }
 
 // int main()
 // {
-//     int c;
-//     c = ft_isalpha('m');
-//     printf("%d",c);
+//     char s[] = "farisii";
+//     printf("%lu", strlen(s));
 // }
