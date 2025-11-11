@@ -6,12 +6,12 @@
 /*   By: fabdul-s <fabdul-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 21:44:46 by fabdul-s          #+#    #+#             */
-/*   Updated: 2025/11/10 21:45:36 by fabdul-s         ###   ########.fr       */
+/*   Updated: 2025/11/11 12:07:17 by fabdul-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-int ft_isdigit(int c)
+int ft_isascii(int c)
 {
     if (c>= 32 && c<= 126)
         return 1;

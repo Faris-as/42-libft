@@ -6,13 +6,13 @@
 /*   By: fabdul-s <fabdul-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 21:43:43 by fabdul-s          #+#    #+#             */
-/*   Updated: 2025/11/10 21:44:17 by fabdul-s         ###   ########.fr       */
+/*   Updated: 2025/11/11 12:07:51 by fabdul-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_isalpha(int c)
+int ft_isalnum(int c)
 {
     if ((c>='a' && c<='z') || (c>='A' && c<='Z') || (c>='0' && c<='9'))
     {

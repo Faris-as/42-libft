@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fabdul-s <fabdul-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 21:32:37 by fabdul-s          #+#    #+#             */
-/*   Updated: 2025/11/11 12:07:24 by fabdul-s         ###   ########.fr       */
+/*   Created: 2025/11/11 14:54:02 by fabdul-s          #+#    #+#             */
+/*   Updated: 2025/11/11 15:16:11 by fabdul-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <ctype.h>
 #include <stdio.h>
 
-int ft_isalnum(int c)
+int ft_toupper(int c)
 {
-    if ((c>='a' && c<='z') || (c>='A' && c<='Z'))
+    if(c >= 97 && c <= 122)
     {
-        return 1;
+        c -= 32;
     }
-    else
-        return 0;
+    return c;
 }
 
 // int main()
 // {
-//     int c;
-//     c = ft_isalpha('m');
-//     printf("%d",c);
+//         int lowerChar = 97;
+//         int upperChar = ft_toupper(lowerChar); // Convert 'h' to 'H'
+//         printf("Lowercase: %d, Uppercase: %c\n", lowerChar, upperChar);
 // }
