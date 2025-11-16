@@ -11,5 +11,30 @@
 /* ************************************************************************** */
 
 #include <string.h>
+#include <stdio.h>
 
-int 
+char *ft_strchr(const char *str, int word)
+{
+	unsigned char m;
+	int i;
+
+	m = word;
+	i = 0;
+
+	while(str[i] != 0)
+	{
+		if (str[i] == m)
+			return ((char*) str + i); // casting
+		i++;
+	}
+	if (m == 0)
+		return ((char*) str + i);
+
+	return (0); 
+}
+
+int main()
+{
+	char s[] = "faris";
+	printf("%s", ft_strchr(s,'l'));
+}
