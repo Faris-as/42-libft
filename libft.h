@@ -1,6 +1,7 @@
 #ifndef LIBFT
 #define LIBFT
 
+#include <stdio.h>
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -17,6 +18,11 @@ void *ft_memcpy(void *s, const void *c, size_t len);
 void *ft_memmove(void *s, const void *c, size_t len);
 size_t ft_strlcpy(char *d, char *s, size_t l);
 size_t ft_strlcat(char *d, char *s, size_t size);
+int ft_toupper(int c);
+int ft_tolower(int c);
+char *ft_strchr(const char *str, int word);
+char *ft_strrchr(const char *s, int c);
+int	ft_strncmp(const char *s1, const char *s2, size_t n);
 
 
 #endif
