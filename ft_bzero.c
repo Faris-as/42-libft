@@ -16,11 +16,13 @@
 void ft_bzero(void *c, size_t len)
 {
     size_t i;
-
+    char *p;
+    
     i = 0;
+    p = (char *)c;
     while (i < len)
     {
-        c[i] = 0;
+        p[i] = 0;
         i++;
     }
 }
