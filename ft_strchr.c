@@ -33,8 +33,8 @@ char *ft_strchr(const char *str, int word)
 	return (0); 
 }
 
-int main()
-{
-	char s[] = "faris";
-	printf("%s", ft_strchr(s,'l'));
-}
+// int main()
+// {
+// 	char s[] = "faris";
+// 	printf("%s", ft_strchr(s,'l'));
+// }

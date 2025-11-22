@@ -34,9 +34,9 @@ char *ft_strrchr(const char *s, int c)
     return(0);
 }
 
-int main()
-{
-    char s[]= "farias";
-    char *m = ft_strrchr(s, 'a');
-    printf("%s", m);
-}
+// int main()
+// {
+//     char s[]= "farias";
+//     char *m = ft_strrchr(s, 'a');
+//     printf("%s", m);
+// }

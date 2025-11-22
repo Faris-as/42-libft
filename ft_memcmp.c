@@ -21,10 +21,10 @@ int ft_memcmp(const void* s1, const void* s2, size_t n)
         return((unsigned char)p1[i] - (unsigned char)p2[i]);
 }
 
-int main() {
-    unsigned char a[] = {1, 2, 3, 4};
-    unsigned char b[] = {1, 2, 5, 4};
+// int main() {
+//     unsigned char a[] = {1, 2, 3, 4};
+//     unsigned char b[] = {1, 2, 5, 4};
 
-    printf("real: %d\n", memcmp(a, b, 4));
-    printf("mine: %d\n", ft_memcmp(a, b, 4));
-}
+//     printf("real: %d\n", memcmp(a, b, 4));
+//     printf("mine: %d\n", ft_memcmp(a, b, 4));
+// }

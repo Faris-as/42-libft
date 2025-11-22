@@ -15,18 +15,15 @@
 
 size_t ft_strlcat(char *d, char *s, size_t size)
 {
-	size_t i;
 	char *dstr;
 	size_t slength;
 	size_t dlength;
-	size_t chav;
 
-	i = 0;
 	dstr = d;
 	dlength = 0;
 	slength = 0;
 	while(*d != '\0')
-		*d++;
+		d++;
 	dlength = d - dstr;
 	while(s[slength])
 		slength++;
@@ -44,12 +41,12 @@ size_t ft_strlcat(char *d, char *s, size_t size)
 	return dlength + slength;
 }
 
-int main()
-{
-	char s[20] = "Hello World";
-	char c[20] = "Power Rangers";
+// int main()
+// {
+// 	char s[20] = "Hello World";
+// 	char c[20] = "Power Rangers";
 
-	size_t m = ft_strlcat(s, c, 20);
-	printf("%s", s);
-	printf("\n%zu", m);
-}
+// 	size_t m = ft_strlcat(s, c, 20);
+// 	printf("%s", s);
+// 	printf("\n%zu", m);
+// }
