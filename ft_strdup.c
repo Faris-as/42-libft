@@ -9,9 +9,7 @@ char *ft_strdup(const char *src)
     size_t length;
 
     length = ft_strlen(src);
-    
     dest = (char *)malloc(sizeof(char) * (length + 1));  // 1 for the terminator
-
     if (dest == NULL)
         return (NULL);
     i = 0;

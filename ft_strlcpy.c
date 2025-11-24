@@ -13,7 +13,7 @@
 #include <stdio.h>
 #include <string.h>
 
-size_t ft_strlcpy(char *d, char *s, size_t l)
+size_t ft_strlcpy(char *d, char const *s, size_t l)
 {
     size_t i;
     size_t length;
